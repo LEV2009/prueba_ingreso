@@ -1,0 +1,405 @@
+!DOCTYPE html
+<html lang="en"><head>
+<head>..
+</head>
+<body>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1083px;
+            height: 542px;
+        }
+        </style>
+        <title></title>
+    </head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1083px;
+            height: 542px;
+        }
+        </style>
+        <title></title>
+    </head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1083px;
+            height: 542px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0" style="position: relative;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(39207.5px, 63625px, 0px) scale(256);"></div><div class="leaflet-pane leaflet-pane_GoogleSatellite_0-pane" style="z-index: 400;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 28; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_Yopal_1-pane" style="z-index: 401;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,547900.6187481434,-7983694.730330091,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,626172.1357121649,-7983694.730330091,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,547900.6187481434,-8061966.247294111,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,547900.6187481434,-7905423.213366071,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,469629.10178412346,-7983694.730330091,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,626172.1357121649,-8061966.247294111,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,626172.1357121649,-7905423.213366071,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,469629.10178412346,-8061966.247294111,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,469629.10178412346,-7905423.213366071,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,547900.6187481434,-8140237.764258132,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,547900.6187481434,-7827151.69640205,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,626172.1357121649,-8140237.764258132,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,626172.1357121649,-7827151.69640205,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,469629.10178412346,-8140237.764258132,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,469629.10178412346,-7827151.69640205,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_u_terreno_2-pane" style="z-index: 402;"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> · <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> · <a href="https://qgis.org">QGIS</a> | <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a></div></div></div></div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet.wms.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.820274284341651,-73.1563665842349],[5.6624799300819015,-71.4703956526697]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_Yopal_1');
+        map.getPane('pane_Yopal_1').style.zIndex = 401;
+        var layer_Yopal_1 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "Yopal", {
+            pane: 'pane_Yopal_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_Yopal_1);
+        map.createPane('pane_u_terreno_2');
+        map.getPane('pane_u_terreno_2').style.zIndex = 402;
+        var layer_u_terreno_2 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "u_terreno", {
+            pane: 'pane_u_terreno_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_u_terreno_2);
+        setBounds();
+        </script>
+    
+
+</body></html>
+
+<div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0" style="position: relative;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(39207.5px, 63625px, 0px) scale(256);"></div><div class="leaflet-pane leaflet-pane_GoogleSatellite_0-pane" style="z-index: 400;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 28; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_Yopal_1-pane" style="z-index: 401;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,547900.6187481434,-7983694.730330091,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,626172.1357121649,-7983694.730330091,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,547900.6187481434,-8061966.247294111,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,547900.6187481434,-7905423.213366071,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,469629.10178412346,-7983694.730330091,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,626172.1357121649,-8061966.247294111,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,626172.1357121649,-7905423.213366071,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,469629.10178412346,-8061966.247294111,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,469629.10178412346,-7905423.213366071,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,547900.6187481434,-8140237.764258132,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,547900.6187481434,-7827151.69640205,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,626172.1357121649,-8140237.764258132,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,626172.1357121649,-7827151.69640205,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,469629.10178412346,-8140237.764258132,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,469629.10178412346,-7827151.69640205,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_u_terreno_2-pane" style="z-index: 402;"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> · <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> · <a href="https://qgis.org">QGIS</a> | <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a></div></div></div></div>
+
+<script src="js/qgis2web_expressions.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/leaflet.rotatedMarker.js"></script>
+<script src="js/leaflet.pattern.js"></script>
+<script src="js/leaflet-hash.js"></script>
+<script src="js/Autolinker.min.js"></script>
+<script src="js/rbush.min.js"></script>
+<script src="js/labelgun.min.js"></script>
+<script src="js/labels.js"></script>
+<script src="js/leaflet.wms.js"></script>
+
+
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.820274284341651,-73.1563665842349],[5.6624799300819015,-71.4703956526697]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_Yopal_1');
+        map.getPane('pane_Yopal_1').style.zIndex = 401;
+        var layer_Yopal_1 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "Yopal", {
+            pane: 'pane_Yopal_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_Yopal_1);
+        map.createPane('pane_u_terreno_2');
+        map.getPane('pane_u_terreno_2').style.zIndex = 402;
+        var layer_u_terreno_2 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "u_terreno", {
+            pane: 'pane_u_terreno_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_u_terreno_2);
+        setBounds();
+        
+<script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.820274284341651,-73.1563665842349],[5.6624799300819015,-71.4703956526697]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_Yopal_1');
+        map.getPane('pane_Yopal_1').style.zIndex = 401;
+        var layer_Yopal_1 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "Yopal", {
+            pane: 'pane_Yopal_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_Yopal_1);
+        map.createPane('pane_u_terreno_2');
+        map.getPane('pane_u_terreno_2').style.zIndex = 402;
+        var layer_u_terreno_2 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "u_terreno", {
+            pane: 'pane_u_terreno_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_u_terreno_2);
+        setBounds();
+        </script>
+<body>
+        <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0" style="position: relative;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(39207.5px, 63625px, 0px) scale(256);"></div><div class="leaflet-pane leaflet-pane_GoogleSatellite_0-pane" style="z-index: 400;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 28; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_Yopal_1-pane" style="z-index: 401;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,547900.6187481434,-7983694.730330091,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,626172.1357121649,-7983694.730330091,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,547900.6187481434,-8061966.247294111,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,547900.6187481434,-7905423.213366071,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,469629.10178412346,-7983694.730330091,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,626172.1357121649,-8061966.247294111,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,626172.1357121649,-7905423.213366071,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,469629.10178412346,-8061966.247294111,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,469629.10178412346,-7905423.213366071,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,547900.6187481434,-8140237.764258132,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,547900.6187481434,-7827151.69640205,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,626172.1357121649,-8140237.764258132,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&a
+
+mp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,626172.1357121649,-7827151.69640205,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,469629.10178412346,-8140237.764258132,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,469629.10178412346,-7827151.69640205,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_u_terreno_2-pane" style="z-index: 402;"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> · <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> · <a href="https://qgis.org">QGIS</a> | <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a></div></div></div></div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet.wms.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.820274284341651,-73.1563665842349],[5.6624799300819015,-71.4703956526697]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_Yopal_1');
+        map.getPane('pane_Yopal_1').style.zIndex = 401;
+        var layer_Yopal_1 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "Yopal", {
+            pane: 'pane_Yopal_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_Yopal_1);
+        map.createPane('pane_u_terreno_2');
+        map.getPane('pane_u_terreno_2').style.zIndex = 402;
+        var layer_u_terreno_2 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "u_terreno", {
+            pane: 'pane_u_terreno_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_u_terreno_2);
+        setBounds();
+        </script>
+   </body>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1083px;
+            height: 542px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0" style="position: relative;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(39207.5px, 63625px, 0px) scale(256);"></div><div class="leaflet-pane leaflet-pane_GoogleSatellite_0-pane" style="z-index: 400;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 28; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=153&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=152&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=154&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=248&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=247&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=151&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://mt1.google.com/vt/lyrs=s&amp;x=155&amp;y=249&amp;z=9" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_Yopal_1-pane" style="z-index: 401;"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,547900.6187481434,-7983694.730330091,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,626172.1357121649,-7983694.730330091,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,547900.6187481434,-8061966.247294111,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,547900.6187481434,-7905423.213366071,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8061966.247294111,469629.10178412346,-7983694.730330091,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,626172.1357121649,-8061966.247294111,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,626172.1357121649,-7905423.213366071,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8140237.764258132,469629.10178412346,-8061966.247294111,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7983694.730330091,469629.10178412346,-7905423.213366071,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,547900.6187481434,-8140237.764258132,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,547900.6187481434,-7827151.69640205,626172.1357121649" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 134px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,626172.1357121649,-8140237.764258132,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,626172.1357121649,-7827151.69640205,704443.6526761841" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, -122px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-8218509.2812221525,469629.10178412346,-8140237.764258132,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 390px, 0px); opacity: 1;"><img alt="" role="presentation" src="http://localhost:8080/geoserver/SIG/wms?SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Yopal%2Cu_terreno&amp;STYLES=&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=true&amp;VERSION=1.1.1&amp;CONTINUOUSWORLD=true&amp;TILED=true&amp;INFO_FORMAT=text%2Fhtml&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG%3A3857&amp;BBOX=-7905423.213366071,469629.10178412346,-7827151.69640205,547900.6187481434" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1019px, 390px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-pane_u_terreno_2-pane" style="z-index: 402;"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> · <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> · <a href="https://qgis.org">QGIS</a> | <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a></div></div></div></div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet.wms.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.820274284341651,-73.1563665842349],[5.6624799300819015,-71.4703956526697]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
+            opacity: 1.0,
+            attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_Yopal_1');
+        map.getPane('pane_Yopal_1').style.zIndex = 401;
+        var layer_Yopal_1 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "Yopal", {
+            pane: 'pane_Yopal_1',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_Yopal_1);
+        map.createPane('pane_u_terreno_2');
+        map.getPane('pane_u_terreno_2').style.zIndex = 402;
+        var layer_u_terreno_2 = L.WMS.layer("http://localhost:8080/geoserver/SIG/wms", "u_terreno", {
+            pane: 'pane_u_terreno_2',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            identify: false,
+            attribution: '',
+        });
+        map.addLayer(layer_u_terreno_2);
+        setBounds();
+        </script>
+   </body>
+</html>
+
